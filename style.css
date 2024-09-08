@@ -1,0 +1,130 @@
+:root {
+  /* cores */
+  --black-blue: #030637;
+  --pruple: #3c0753;
+  --dark-pink: #720455;
+  --pink: #910a67;
+  --black: #191825;
+  --gray-black: #0e0e15;
+  --green: #498e2a;
+}
+html,
+body {
+  background: var(--black);
+  font-family: "Cinzel", serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+label {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: var(--green);
+  font-size: 1rem;
+}
+a:hover {
+  font-weight: bold;
+  color: aliceblue;
+}
+ul {
+  list-style-type: circle;
+  color: var(--green);
+  text-shadow: 1px 0 aliceblue;
+}
+p {
+  font-size: 0.75rem;
+  margin: 0;
+}
+h1 {
+  font-size: 1rem;
+  /* font-family: "MedievalSharp", cursive; */
+  font-weight: 200;
+  font-family: "IM Fell English", serif;
+}
+
+input {
+  border-radius: 12px;
+}
+.display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.parametros {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Layer Tela */
+.tela {
+  background: var(--gray-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 16px;
+  padding: 0 20px;
+  margin: 0 20px;
+  width: 450px;
+}
+.avatar {
+  height: 200px;
+}
+.texto {
+  color: var(--green);
+  text-align: center;
+  margin: 0 20px;
+}
+.texto > p {
+  text-shadow: 1px 0 aliceblue;
+  margin: 2px 0;
+}
+input {
+  margin: 3px;
+}
+.dados {
+  color: var(--green);
+  font-family: "IM Fell English", serif;
+}
+.button {
+  background-color: var(--green);
+  color: aliceblue;
+  font-family: "IM Fell English", serif;
+
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 728px) {
+  .tela {
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+  }
+  p {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  a {
+    font-size: 1.5rem;
+  }
+  .avatar {
+    height: 350px;
+  }
+  .texto {
+    text-align: center;
+    margin: 0 50px;
+    text-indent: 2em;
+  }
+}
+
+@media only screen and (min-width: 910px) {
+  .tela {
+    width: 780px;
+  }
+}

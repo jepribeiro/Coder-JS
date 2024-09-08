@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <div class="display">
+      <div class="tela">
+        <div class="avatar">
+          <img
+            class="avatar"
+            src="assets/avatar-jess.png"
+            alt="Avatar de Jess"
+          />
+        </div>
+        <div class="texto">
+          <p>Jess diz:</p>
+          <h1>
+            Aqui você pode calcular quanto ganhará/ganhou por hora em um
+            projeto!
+          </h1>
+          <p>Insira os dados:</p>
+        </div>
+        <main class="menu">
+          <form action="">
+            <div class="parametros">
+              <label class="dados" for="salario">Salário</label>
+              <input type="number" name="salario" id="salario" />
+            </div>
+            <div class="parametros">
+              <label class="dados" for="custo-fixo">Custo fixo</label>
+              <input type="number" name="custo-fixo" id="custo-fixo" />
+            </div>
+            <div class="parametros">
+              <label class="dados" for="horas-trabalho"
+                >Quantas horas de trabalho</label
+              >
+              <input type="number" name="horas-trabalho" id="horas-trabalho" />
+            </div>
+
+            <label class="dados" for="salvar">Deseja salvar? </label>
+            <input type="checkbox" id="salvar" />
+            <input class="button" type="button" value="Calcular" />
+            <input
+              class="button"
+              type="button"
+              value="Ver dados salvos"
+              id="mostrar-dados"
+            />
+          </form>
+        </main>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
