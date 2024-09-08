@@ -1,0 +1,31 @@
+:root {
+  /* cores */
+  --black-blue: #030637;
+  --pruple: #3c0753;
+  --dark-pink: #720455;
+  --pink: #910a67;
+  --black: #191825;
+  --gray-black: #0e0e15;
+  --green: #498e2a;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: var(--green);
+  color: aliceblue;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table,
+th,
+td {
+  border: 2.5px solid black;
+}
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
